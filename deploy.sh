@@ -12,8 +12,6 @@ APP_NAME="legacy-inventory-app"
 LOG_FILE="/var/log/deploy-${APP_NAME}.log"
 
 # WARNING: Hardcoded for staging only – do NOT use in production!
-ROOT_USER="root"
-ROOT_PASS="SuperSecret123!"  # TODO: move this to secure vault
 
 echo "[*] Starting deployment for $APP_NAME..." | tee -a "$LOG_FILE"
 START_TIME=$(date '+%Y-%m-%d %H:%M:%S')
